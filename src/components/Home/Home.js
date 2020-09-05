@@ -63,7 +63,7 @@ const Home = () => {
                     }                    
                     <p className="name-hero">{hero.name}</p>
                     </Link>
-                    <Link to="/favorite"><i className="fas fa-heart"></i></Link>                    
+                    <i className="fas fa-heart"></i>
                     </div>
                 ))
         }

@@ -82,7 +82,7 @@ main {
     width: 100%;
 }
 
-a .fa-heart{
+.fa-heart{
     position: absolute;
     top: 5px;
     right: 10px;
