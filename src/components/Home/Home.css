@@ -1,0 +1,104 @@
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+}
+
+
+.input-search {
+    width: 250px;
+    height: 35px;
+    padding: 5px 10px;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+    outline: none;
+    color: rgb(117, 3, 83);
+    font-size: 16px;    
+}
+
+[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+
+.btn-search {
+    width: 35px;
+    height: 34px;
+    background-color: transparent;
+    outline: none;
+    background-color: #743ad5;
+    border-top: 2px solid #743ad5;
+    border-right: none;
+    border-bottom: 2px solid #743ad5;
+    border-left: none;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 3px;
+}
+
+#container-superhero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;    
+    margin-top: 30px;
+}
+
+#container-superhero a {
+    text-decoration: none;
+}
+
+
+.container-img-hero {
+    position: relative;
+    width: 250px;
+    text-align: center;
+    margin: 10px;
+    overflow: hidden;
+    border: 1px solid rgb(167, 0, 0);
+    border-radius: 5px;
+    
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+}
+
+.container-img-hero:hover {
+    cursor: pointer;
+    -webkit-transform:scale(1.07);
+    -moz-transform:scale(1.07);
+    -ms-transform:scale(1.07);
+    -o-transform:scale(1.07);
+    transform:scale(1.07);
+}
+
+.container-img-hero img{
+    width: 100%;
+}
+
+a .fa-heart{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    color: #a70000;
+}
+
+.fa-heart:hover {
+    font-size: 1.2em;
+    color: red;
+}
+
+.name-hero {    
+    color: #fff;
+    font-family: "American Captain";
+    font-family: "Earths";
+    letter-spacing: 1px;
+    background-color: #a70000;
+}

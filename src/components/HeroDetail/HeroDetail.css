@@ -1,0 +1,35 @@
+.hero-detail {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.hero-detail h1 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-family: "Marvel";
+    font-size: 3em;
+    font-family: "American Captain";
+}
+
+.container-img-hero-detail {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: auto;
+    padding: 20px;
+}
+
+.container-img-hero-detail img {
+    width: 100%;
+}
+
+.container-img-hero-detail h3 {
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #363636;
+}

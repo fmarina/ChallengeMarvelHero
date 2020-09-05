@@ -1,38 +1,28 @@
-.App {
-  text-align: center;
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
+
+@font-face {
+    font-family: "Marvel";
+    src: url('./assets/fonts/MarvelRegular-Dj83.ttf');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: "American Captain";
+    src: url('./assets/fonts/AmericanCaptain-MdEY.otf');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+    font-family: "Earths";
+    src: url('./assets/fonts/EarthsMightiest-A3wg.otf');
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-color: #ebebeb;
 }
