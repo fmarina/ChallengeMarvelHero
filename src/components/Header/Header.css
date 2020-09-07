@@ -21,7 +21,6 @@ nav a {
     text-decoration: none;
 }
 
-
 .img-container {
     width: 120px;
 
@@ -30,3 +29,59 @@ nav a {
 .img-container img {
     width: 120%;
 }
+
+
+
+@media(max-width: 400px) {
+    nav{
+        justify-content: space-between;
+        padding: 0;
+        padding-right: 10px;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+            
+    .img-container {
+        width: 100px;
+    }
+    
+    .img-container img {
+        width: 120%;
+    }    
+}
+
+@media(max-width: 330px) {
+    nav{
+        justify-content: space-between;
+        padding: 0;
+        padding-right: 10px;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+            
+    .img-container {
+        width: 80px;
+    }
+    
+    .img-container img {
+        width: 120%;
+    }    
+}
+
+@media(max-width: 300px) {
+    nav{
+        padding: 0 5px;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+            
+    .img-container {
+        width: 50px;
+        padding: 2px;
+    }
+   
+    .img-container img {
+        width: 100%;
+    }    
+}
+

@@ -5,13 +5,13 @@ import {useParams} from 'react-router-dom';
 import {Context} from '../../Context';
 
 const HeroDetail = () => {
-    const {data} = useContext(Context);
+    const {allSuperHeroes} = useContext(Context);
     const {idHero} = useParams();    
-    const hero = data.find(heroe => heroe.id === Number(idHero))
+    const hero = allSuperHeroes.find(heroe => heroe.id === Number(idHero))
 
     return (
         <div className="hero-detail">
-            <h1>{hero.name}</h1>
+            <h2>{hero.name}</h2>
             <div className="container-img-hero-detail">
             {   (hero.thumbnail.path).includes("image_not_available")
                 ? <img src={imgNotFound} alt={hero.name}/>

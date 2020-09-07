@@ -1,0 +1,96 @@
+.favorite-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 120px;    
+    text-align: center;
+}
+
+.favorite-container h1 {
+    padding: 30px 20px 40px;
+    font-family: "Marvel";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.favorite-list {    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.favorite-list ul {
+    width: 100%;
+    list-style: none;
+    margin: 10px
+}
+
+.favorite-list li {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.favorite-list li:hover {
+    background-color: #e4e4e4;
+
+}
+
+.favorite-list img {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.favorite-list h3 {
+    font-size: 22px;
+}
+
+.fa-trash {
+    cursor: pointer;
+}
+
+.fa-trash:hover {
+    color: rgb(66, 66, 66);
+}
+
+
+@media(max-width: 600px) {
+    .favorite-container {
+        margin-bottom: 80px;
+    }
+    
+    .favorite-list li {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+@media(max-width: 375px) {
+    .favorite-list ul {
+        margin: 5px
+    }
+
+    .favorite-container h1 {
+        padding-bottom: 10px;
+    }
+
+    .favorite-list li {
+        padding: 5px;
+    }
+    
+    .favorite-list img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .favorite-list h3 {
+        font-size: 18px;
+    }
+}

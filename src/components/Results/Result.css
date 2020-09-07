@@ -1,0 +1,78 @@
+#container-superhero {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;    
+    margin-top: 40px;
+    margin-bottom: 100px;
+    padding: 10 30px;
+}
+
+#container-superhero a {
+    text-decoration: none;
+}
+
+
+.container-img-hero {
+    position: relative;
+    width: 250px;
+    margin: 10px;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+}
+
+.container-img-hero:hover {
+    cursor: pointer;
+    -webkit-transform:scale(1.07);
+    -moz-transform:scale(1.07);
+    -ms-transform:scale(1.07);
+    -o-transform:scale(1.07);
+    transform:scale(1.07);
+}
+
+.container-img-hero img{
+    width: 100%;
+}
+
+.fa-heart{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    cursor: pointer;
+    color: #a70000;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.fa-heart:hover {
+    color: rgb(221, 0, 0);
+}
+
+.name-hero {    
+    color: #fff;
+    font-family: "American Captain";
+    font-family: "Earths";
+    letter-spacing: 1px;
+    background-color: #a70000;
+    background-color: #363636;
+    margin-top: -5px;
+    padding: 8px;
+}
+
+@media(max-width: 809px) {    
+    .container-img-hero {
+        width: 190px;
+    }
+}
+
+@media(max-width: 430px) {
+    .container-img-hero {
+        width: 130px;
+    }
+}

@@ -5,7 +5,7 @@ const Footer = () => {
 
     return (
         <footer>
-            <p>made with &#128156; by marina faenze</p>
+            <p>made with <span role="img" aria-label="heart"> &#128156; </span> by marina faenze</p>
         </footer>
     );
 

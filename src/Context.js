@@ -8,16 +8,30 @@ const Context = React.createContext();
 
 function ContextProvider(props) {
 
-    const [data, setData] = useState([]);
+    const [favoriteHero, setFavoriteHero] = useState([]);
+    const [allSuperHeroes, setAllSuperHeroes] = useState([]);
 
     useEffect(() => {
         fetch(apiURL)
             .then(res => res.json())
-            .then(data => setData(data.data.results));
+            .then(data => setAllSuperHeroes(data.data.results));
     }, [])
 
+    const addFavoriteHero = (newHero) => {
+        setFavoriteHero(prevHeroes => [...prevHeroes, newHero]);
+    }
+
+    const removeFavoriteHero = (idHero) => {
+        setFavoriteHero( prevHeroes => prevHeroes.filter(hero => hero.id !== idHero))
+    }
+
     return (
-        <Context.Provider value={{data}}>
+        <Context.Provider value={{
+            allSuperHeroes,
+            favoriteHero,
+            addFavoriteHero,
+            removeFavoriteHero,
+        }}>
             {props.children}
         </Context.Provider>
     );
