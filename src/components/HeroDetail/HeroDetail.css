@@ -37,6 +37,7 @@
     font-family: 'Courier New', Courier, monospace;
     color: #363636;    
     line-height: 1.4;
+    max-width: 800px;
 }
 
 @media(max-width: 425px) {  
