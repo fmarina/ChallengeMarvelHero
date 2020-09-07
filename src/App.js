@@ -12,12 +12,12 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <Switch>
-        <Route exact path="/" ><Home/></Route>   
-        <Route path="/search"><Search /></Route>     
-        <Route path="/favorite"><Favorite /></Route>
-        <Route path="/:idHero"><HeroDetail /></Route>
-      </Switch>
+        <Switch>
+          <Route exact path="/" ><Home/></Route>   
+          <Route path="/search"><Search /></Route>     
+          <Route path="/favorite"><Favorite /></Route>
+          <Route path="/:idHero"><HeroDetail /></Route>
+        </Switch>
       <Footer />
     </div>
   );
