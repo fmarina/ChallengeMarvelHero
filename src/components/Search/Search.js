@@ -10,7 +10,6 @@ const Search = () => {
     const [heroFound, setHeroFound] = useState("");
 
     const handleSearch = (value, setValue, e) => {
-
         e.preventDefault();
         if(value.length > 0){
             const findHero = allSuperHeroes.filter(hero => hero.name.toLowerCase().includes(value.toLowerCase()));

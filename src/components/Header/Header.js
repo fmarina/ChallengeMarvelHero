@@ -3,8 +3,7 @@ import {Link} from 'react-router-dom';
 import logo from '../../assets/images/logo-marvel.png';
 import './Header.css';
 
-const Header = () => {
-    
+const Header = () => {    
     return (
         <header>
             <nav>
@@ -16,7 +15,6 @@ const Header = () => {
             </nav>
         </header>
     );
-
 }
 
 export default Header;

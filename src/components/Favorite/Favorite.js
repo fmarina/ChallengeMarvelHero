@@ -11,8 +11,7 @@ const Favorite = () => {
         <div className="favorite-container">
             <h1>Favorite Heroes</h1>
             <div className="favorite-list">
-            {
-                (favoriteHero.length > 0)
+            {   (favoriteHero.length > 0)
                 ? (
                     favoriteHero.map((hero) => (
                         <ul key={hero.id}>

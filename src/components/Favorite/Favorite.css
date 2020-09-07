@@ -37,10 +37,7 @@
     padding: 20px;
 }
 
-.favorite-list li:hover {
-    background-color: #e4e4e4;
-
-}
+.favorite-list li:hover { background-color: #e4e4e4; }
 
 .favorite-list img {
     border-radius: 10px;
@@ -48,17 +45,11 @@
     height: 100px;
 }
 
-.favorite-list h3 {
-    font-size: 22px;
-}
+.favorite-list h3 { font-size: 22px; }
 
-.fa-trash {
-    cursor: pointer;
-}
+.fa-trash { cursor: pointer; }
 
-.fa-trash:hover {
-    color: rgb(66, 66, 66);
-}
+.fa-trash:hover { color: rgb(66, 66, 66); }
 
 
 @media(max-width: 600px) {
