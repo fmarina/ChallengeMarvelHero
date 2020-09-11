@@ -2,6 +2,10 @@
 
 ## https://challenge-marvel-hero.vercel.app/
 
+### Desarrollado en React js. Hooks y Context.
+
+
+
 ###
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
